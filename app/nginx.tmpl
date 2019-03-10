@@ -8,7 +8,7 @@
 {{- end -}}
 {{ if .ONLINE }}
 	# Access through rancher managed network
-	server {{.IP}}:{{.PORT}};
+	server {{$upstream_host}}:{{$upstream_port}};
 {{- else }}
 	# {{.IP}} is not running or is unhealthy
 {{- end }}
