@@ -1,7 +1,7 @@
 .catalog:
  name: "Initial Version"
- version: "v0.0.1"
- questions:    
+ version: "v0.0.2"
+ questions:
     - variable: PATH
       label: "Path to save config on host"
       default: "/data/rancher-active-proxy"
@@ -12,7 +12,7 @@
     - variable: DEFAULT_EMAIL
       label: "Default Email to use for Letsencrypt"
       default: "foo@bar.com"
-      type: string    
+      type: string
     - variable: DEFAULT_PORT
       label: "Default Port to use"
       default: "80"
@@ -24,4 +24,12 @@
     - variable: DEBUG
       label: "Set to true to enable debug"
       default: "False"
+      type: string
+    - variable: UPSTREAM_HOST
+      label: "Upstream Host"
+      default: ""
+      type: string
+    - variable: UPSTREAM_PORT
+      label: "Upstream Port"
+      default: "80"
       type: string
